@@ -9,22 +9,54 @@
         android:id="@+id/mainFragment"
         android:name="ru.youdontfindme.aifam.ui.main.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" >
+        tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_placeholder"
-            app:destination="@id/placeholder" />
+            app:destination="@id/playersFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_placeholder2"
-            app:destination="@id/placeholder2" />
+            android:id="@+id/action_mainFragment_to_rolesFragment"
+            app:destination="@id/rolesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_statisticsFragment2"
+            app:destination="@id/statisticsFragment" />
     </fragment>
-    <fragment android:id="@+id/placeholder" >
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="ru.youdontfindme.aifam.ui.players.PlayersFragment"
+        android:label="fragment_players"
+        tools:layout="@layout/fragment_players" >
         <action
-            android:id="@+id/action_placeholder_to_mainFragment"
+            android:id="@+id/action_playersFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_playersFragment_to_rolesFragment"
+            app:destination="@id/rolesFragment" />
     </fragment>
-    <fragment android:id="@+id/placeholder2" >
+    <fragment
+        android:id="@+id/rolesFragment"
+        android:name="ru.youdontfindme.aifam.ui.roles.RolesFragment"
+        android:label="fragment_roles"
+        tools:layout="@layout/fragment_roles" >
         <action
-            android:id="@+id/action_placeholder2_to_mainFragment"
+            android:id="@+id/action_rolesFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_rolesFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_rolesFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="ru.youdontfindme.aifam.ui.statistics.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" >
+        <action
+            android:id="@+id/action_statisticsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_statisticsFragment_to_rolesFragment"
+            app:destination="@id/rolesFragment" />
     </fragment>
 </navigation>

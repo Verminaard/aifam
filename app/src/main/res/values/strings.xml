@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Poděbradská Mafia</string>
+    <string name="home_menu_element_name">Главная</string>
+    <string name="players_menu_element_name">Игроки</string>
+    <string name="roles_menu_element_name">Роли</string>
+    <string name="statistic_menu_element_name">Статистика</string>
 </resources>

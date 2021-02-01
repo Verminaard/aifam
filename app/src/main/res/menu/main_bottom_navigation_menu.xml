@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/main_button"
+    <item android:id="@+id/mainFragment"
         android:icon="@drawable/ic_home"
-        android:title="1"
+        android:title="@string/home_menu_element_name"
         app:showAsAction="ifRoom" />
-    <item android:id="@+id/players_button"
+    <item android:id="@+id/playersFragment"
         android:icon="@drawable/ic_account_group"
-        android:title="2" />
-    <item android:id="@+id/roles_button"
+        android:title="@string/players_menu_element_name" />
+    <item android:id="@+id/rolesFragment"
         android:icon="@drawable/ic_drama_masks"
-        android:title="3" />
+        android:title="@string/roles_menu_element_name" />
+    <item android:id="@+id/statisticsFragment"
+        android:icon="@drawable/ic_table_account"
+        android:title="@string/statistic_menu_element_name" />
 </menu>
